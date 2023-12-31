@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+
+body {
+    background-color: #000;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.msg {
+    width: 100%;
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 170px;
+    font-weight: bolder;
+    color: #ff00c3;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    opacity: 0;
+    animation: message 2s ease-in-out 6s forwards;
+}
+
+@keyframes message {
+    0% {
+        opacity: 0;
+        margin-top: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: -200px;
+    }
+}
+
+.y1 {
+    color: #fff;
+    animation: y1colorful 2s ease-in-out 5.75s forwards;
+}
+.y2 {
+    color: #fff;
+    animation: y2colorful 2s ease-in-out 5.75s forwards;
+}
+.y3 {
+    color: #fff;
+    animation: y3colorful 2s ease-in-out 5.75s forwards;
+}
+.y4 {
+    color: #fff;
+}
+@keyframes y1colorful {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: orange;
+    }
+}
+@keyframes y2colorful {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #4cdde2;
+    }
+}
+@keyframes y3colorful {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #ff94a6;
+    }
+}
+
+.old {
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    animation: old_animation 2s ease-in-out 4s forwards;
+}
+@keyframes old_animation{
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: -270%;
+    }
+}
+
+.year{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+}
+.year > span {
+    font-size: 170px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -12px;
+}
+
+.new{
+    position: absolute;
+    right: -100px;
+    animation: new_animation 5s ease-in-out 1.5s forwards;
+}
+@keyframes new_animation {
+    0%{
+        right: -100px;
+    }
+    40%{
+        right: 335px;
+    }
+    90%{
+        right: 335px;
+    }
+    100%{
+        right: 410px;
+        color: yellow;
+    }
+}
+
+.balloon{
+    width: 90px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    margin-top: -250px;
+    animation: balloon_animation 5s ease-in-out 1.5s forwards;
+}
+.balloon::after{
+    content: '';
+    width: 4px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    bottom: -100px;
+}
+.balloon::before{
+    content: '';
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #fd3553 transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+@keyframes balloon_animation {
+    0%{
+        right: -100px;
+    }
+    40%{
+        right: 335px;
+    }
+    50%{
+        right: 435px;
+        top: 50%;
+    }
+    100%{
+        right: 435px;
+        top: -200%;
+    }
+}
