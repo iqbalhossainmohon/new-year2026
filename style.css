@@ -45,38 +45,47 @@ body {
     color: #fff;
     animation: y1colorful 2s ease-in-out 5.75s forwards;
 }
+
 .y2 {
     color: #fff;
     animation: y2colorful 2s ease-in-out 5.75s forwards;
 }
+
 .y3 {
     color: #fff;
     animation: y3colorful 2s ease-in-out 5.75s forwards;
 }
+
 .y4 {
     color: #fff;
 }
+
 @keyframes y1colorful {
-    0%{
+    0% {
         color: #fff;
     }
-    100%{
+
+    100% {
         color: orange;
     }
 }
+
 @keyframes y2colorful {
-    0%{
+    0% {
         color: #fff;
     }
-    100%{
+
+    100% {
         color: #4cdde2;
     }
 }
+
 @keyframes y3colorful {
-    0%{
+    0% {
         color: #fff;
     }
-    100%{
+
+    100% {
         color: #ff94a6;
     }
 }
@@ -87,50 +96,57 @@ body {
     top: 0%;
     animation: old_animation 2s ease-in-out 4s forwards;
 }
-@keyframes old_animation{
-    0%{
+
+@keyframes old_animation {
+    0% {
         top: 0%;
     }
-    100%{
+
+    100% {
         top: -270%;
     }
 }
 
-.year{
+.year {
     position: absolute;
     top: 300px;
     width: 100%;
     text-align: center;
 }
-.year > span {
+
+.year>span {
     font-size: 170px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     letter-spacing: -12px;
 }
 
-.new{
+.new {
     position: absolute;
     right: -100px;
     animation: new_animation 5s ease-in-out 1.5s forwards;
 }
+
 @keyframes new_animation {
-    0%{
+    0% {
         right: -100px;
     }
-    40%{
+
+    40% {
         right: 335px;
     }
-    90%{
+
+    90% {
         right: 335px;
     }
-    100%{
+
+    100% {
         right: 410px;
         color: yellow;
     }
 }
 
-.balloon{
+.balloon {
     width: 90px;
     height: 100px;
     border-radius: 50%;
@@ -141,7 +157,8 @@ body {
     margin-top: -250px;
     animation: balloon_animation 5s ease-in-out 1.5s forwards;
 }
-.balloon::after{
+
+.balloon::after {
     content: '';
     width: 4px;
     height: 100px;
@@ -151,7 +168,8 @@ body {
     margin-left: -2px;
     bottom: -100px;
 }
-.balloon::before{
+
+.balloon::before {
     content: '';
     border-style: solid;
     border-width: 0 10px 20px 10px;
@@ -163,18 +181,33 @@ body {
 }
 
 @keyframes balloon_animation {
-    0%{
+    0% {
         right: -100px;
     }
-    40%{
+
+    40% {
         right: 335px;
     }
-    50%{
+
+    50% {
         right: 435px;
         top: 50%;
     }
-    100%{
+
+    100% {
         right: 435px;
         top: -200%;
     }
+}
+
+.footer{
+    margin-top: 500px;
+    position: absolute;
+    margin-left: 45%;
+}
+.footer__copy {
+    font-size: .813rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
 }
