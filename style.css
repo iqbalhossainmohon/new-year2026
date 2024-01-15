@@ -205,9 +205,13 @@ body {
     position: absolute;
     margin-left: 45%;
 }
-.footer__copy {
+.footer_copy {
     font-size: .813rem;
     text-align: center;
     color: #fff;
     margin-top: 3rem;
+}
+
+.new_year{
+    color: #ff00c3;
 }
